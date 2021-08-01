@@ -1,0 +1,9 @@
+version: "2.3"
+services:
+  tf-docker:
+    build: ./tf-docker
+    runtime: nvidia
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/tf/code
